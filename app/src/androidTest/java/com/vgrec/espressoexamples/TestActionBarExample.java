@@ -14,10 +14,10 @@ import static android.support.test.espresso.matcher.ViewMatchers.withText;
 /**
  * @author vgrec, created on 3/20/15.
  */
-public class ActionBarExampleTest extends ActivityInstrumentationTestCase2<ActionBarExampleActivity> {
+public class TestActionBarExample extends ActivityInstrumentationTestCase2<ActionBarExampleActivity> {
 
 
-    public ActionBarExampleTest() {
+    public TestActionBarExample() {
         super(ActionBarExampleActivity.class);
     }
 

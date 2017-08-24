@@ -14,20 +14,20 @@ import static android.support.test.espresso.matcher.ViewMatchers.isAssignableFro
 import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
-import static com.vgrec.espressoexamples.matchers.CustomMatchers.withBookAuthor;
-import static com.vgrec.espressoexamples.matchers.CustomMatchers.withBookTitle;
+import static com.vgrec.espressoexamples.matchers.CustomMatchersTest.withBookAuthor;
+import static com.vgrec.espressoexamples.matchers.CustomMatchersTest.withBookTitle;
 import static org.hamcrest.CoreMatchers.allOf;
 
 
 /**
  * @author vgrec, created on 3/23/15.
  */
-public class ViewPagerTest extends ActivityInstrumentationTestCase2<ViewPagerActivity> {
+public class TestViewPager extends ActivityInstrumentationTestCase2<ViewPagerActivity> {
 
     private static final String BOOK_TITLE = "Clean Code";
     private static final String BOOK_AUTHOR = "Robert C. Martin";
 
-    public ViewPagerTest() {
+    public TestViewPager() {
         super(ViewPagerActivity.class);
     }
 

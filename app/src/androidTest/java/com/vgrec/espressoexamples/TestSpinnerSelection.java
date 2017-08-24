@@ -10,8 +10,8 @@ import static android.support.test.espresso.action.ViewActions.click;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
-import static com.vgrec.espressoexamples.matchers.CustomMatchers.withAdaptedData;
-import static com.vgrec.espressoexamples.matchers.CustomMatchers.withItemContent;
+import static com.vgrec.espressoexamples.matchers.CustomMatchersTest.withAdaptedData;
+import static com.vgrec.espressoexamples.matchers.CustomMatchersTest.withItemContent;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.Matchers.allOf;
 import static org.hamcrest.Matchers.instanceOf;
@@ -21,13 +21,13 @@ import static org.hamcrest.Matchers.not;
 /**
  * @author vgrec, created on 3/17/15.
  */
-public class SpinnerSelectionTest extends ActivityInstrumentationTestCase2<SpinnerSelectionActivity> {
+public class TestSpinnerSelection extends ActivityInstrumentationTestCase2<SpinnerSelectionActivity> {
 
     public static final String INVALID_COUNTRY_NAME = "NoSuchCountry";
     public static final String VALID_COUNTRY_NAME = "Moldova";
     public static final String FIRST_ITEM_TEXT = "Select your country";
 
-    public SpinnerSelectionTest() {
+    public TestSpinnerSelection() {
         super(SpinnerSelectionActivity.class);
     }
 

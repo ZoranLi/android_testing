@@ -5,11 +5,6 @@ import com.vgrec.espressoexamples.models.Book;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/**
- * This class holds constants with some data for testing.
- *
- * @author vgrec, created on 3/23/15.
- */
 public class Database {
 
     public static final ArrayList<Book> NEW_BOOKS = new ArrayList<>(Arrays.asList(

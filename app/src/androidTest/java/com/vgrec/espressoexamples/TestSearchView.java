@@ -22,7 +22,7 @@ import static android.support.test.espresso.matcher.ViewMatchers.isAssignableFro
 import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
-import static com.vgrec.espressoexamples.matchers.CustomMatchers.withItemContent;
+import static com.vgrec.espressoexamples.matchers.CustomMatchersTest.withItemContent;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.Matchers.allOf;
 import static org.hamcrest.Matchers.instanceOf;
@@ -31,11 +31,11 @@ import static org.hamcrest.Matchers.not;
 /**
  * @author vgrec, created on 3/19/15.
  */
-public class SearchViewTest extends ActivityInstrumentationTestCase2<SearchViewActivity> {
+public class TestSearchView extends ActivityInstrumentationTestCase2<SearchViewActivity> {
 
     public static final String HELSINKI = "Helsinki";
 
-    public SearchViewTest() {
+    public TestSearchView() {
         super(SearchViewActivity.class);
     }
 

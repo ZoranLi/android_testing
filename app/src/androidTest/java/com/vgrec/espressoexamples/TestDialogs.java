@@ -14,9 +14,9 @@ import static android.support.test.espresso.matcher.ViewMatchers.withText;
 /**
  * @author vgrec, created on 3/24/15.
  */
-public class DialogTests extends ActivityInstrumentationTestCase2<DialogExampleActivity> {
+public class TestDialogs extends ActivityInstrumentationTestCase2<DialogExampleActivity> {
 
-    public DialogTests() {
+    public TestDialogs() {
         super(DialogExampleActivity.class);
     }
 

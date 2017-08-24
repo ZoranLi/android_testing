@@ -14,10 +14,7 @@ import org.hamcrest.TypeSafeMatcher;
 import static com.android.support.test.deps.guava.base.Preconditions.checkNotNull;
 import static org.hamcrest.Matchers.equalTo;
 
-/**
- * @author vgrec, created on 3/17/15.
- */
-public class CustomMatchers {
+public class CustomMatchersTest {
 
 
     /**

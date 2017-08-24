@@ -17,12 +17,12 @@ import static org.hamcrest.CoreMatchers.not;
 /**
  * @author vgrec, created on 3/17/15.
  */
-public class EnterNameTest extends ActivityInstrumentationTestCase2<EnterNameActivity> {
+public class TestEnterName extends ActivityInstrumentationTestCase2<EnterNameActivity> {
 
     public static final String USER_NAME = "John";
     public static final String GREETING_MESSAGE = "Hello " + USER_NAME + "!";
 
-    public EnterNameTest() {
+    public TestEnterName() {
         super(EnterNameActivity.class);
     }
 

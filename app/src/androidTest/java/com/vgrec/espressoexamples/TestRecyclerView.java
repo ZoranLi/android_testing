@@ -12,15 +12,12 @@ import static android.support.test.espresso.matcher.ViewMatchers.hasDescendant;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
 
-/**
- * @author vgrec, created on 3/30/15.
- */
-public class RecyclerViewTest extends ActivityInstrumentationTestCase2<RecyclerViewActivity> {
+public class TestRecyclerView extends ActivityInstrumentationTestCase2<RecyclerViewActivity> {
 
     private static final String BOOK_TITLE = "Clean Code";
     private static final String BOOK_AUTHOR = "Robert C. Martin";
 
-    public RecyclerViewTest() {
+    public TestRecyclerView() {
         super(RecyclerViewActivity.class);
     }
 

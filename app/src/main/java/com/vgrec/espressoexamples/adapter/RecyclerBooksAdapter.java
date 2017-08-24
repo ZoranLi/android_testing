@@ -13,11 +13,6 @@ import com.vgrec.espressoexamples.R;
 import com.vgrec.espressoexamples.activities.BookDetailsActivity;
 import com.vgrec.espressoexamples.models.Book;
 
-/**
- * The adapter used by RecyclerView to display books.
- *
- * @author vgrec, created on 3/30/15.
- */
 public class RecyclerBooksAdapter extends RecyclerView.Adapter<RecyclerBooksAdapter.RowHolder> {
 
     private LayoutInflater inflater;

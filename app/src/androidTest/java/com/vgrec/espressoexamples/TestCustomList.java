@@ -10,9 +10,9 @@ import static android.support.test.espresso.action.ViewActions.click;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
-import static com.vgrec.espressoexamples.matchers.CustomMatchers.withBookAuthor;
-import static com.vgrec.espressoexamples.matchers.CustomMatchers.withBookId;
-import static com.vgrec.espressoexamples.matchers.CustomMatchers.withBookTitle;
+import static com.vgrec.espressoexamples.matchers.CustomMatchersTest.withBookAuthor;
+import static com.vgrec.espressoexamples.matchers.CustomMatchersTest.withBookId;
+import static com.vgrec.espressoexamples.matchers.CustomMatchersTest.withBookTitle;
 import static org.hamcrest.CoreMatchers.allOf;
 import static org.hamcrest.CoreMatchers.anything;
 
@@ -20,12 +20,12 @@ import static org.hamcrest.CoreMatchers.anything;
 /**
  * @author vgrec, created on 3/18/15.
  */
-public class CustomListTest extends ActivityInstrumentationTestCase2<CustomListActivity> {
+public class TestCustomList extends ActivityInstrumentationTestCase2<CustomListActivity> {
 
     private static final String BOOK_TITLE = "Java Concurrency in Practice";
     private static final String BOOK_AUTHOR = "Brian Goetz";
 
-    public CustomListTest() {
+    public TestCustomList() {
         super(CustomListActivity.class);
     }
 

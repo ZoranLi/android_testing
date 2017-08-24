@@ -12,9 +12,6 @@ import com.vgrec.espressoexamples.models.Book;
 
 import java.util.ArrayList;
 
-/**
- * Adapter that provides views for the list
- */
 public class BooksAdapter extends BaseAdapter {
     private LayoutInflater inflater;
     private ArrayList<Book> items;

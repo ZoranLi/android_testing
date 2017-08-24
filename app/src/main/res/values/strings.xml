@@ -11,7 +11,7 @@
     <string name="viewpager">ViewPager</string>
     <string name="dialogs">Dialogs</string>
     <string name="recyclerview">RecyclerView</string>
-    <string name="examples_of_features_tested">Examples of features tested</string>
+    <string name="examples_of_features_tested">基本测试</string>
     <string name="title_activity_enter_name">EnterNameActivity</string>
     <string name="enter_name">Enter name</string>
     <string name="next">Next</string>

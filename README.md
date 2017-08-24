@@ -1,4 +1,4 @@
 # EspressoExamples
-A collection of examples demonstrating different techniques for automated testing with Espresso.
+示例的基本示意图
+![alt tag](screens/example_Espresso.png)
 
-![alt tag](screens/main_activity.png)

@@ -5,8 +5,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.provider.SearchRecentSuggestions;
 import android.support.v7.app.ActionBarActivity;
+import android.text.method.LinkMovementMethod;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.vgrec.espressoexamples.Database;
 import com.vgrec.espressoexamples.R;
@@ -24,7 +26,9 @@ public class SearchableActivity extends ActionBarActivity {
         setContentView(R.layout.activity_searchable);
 
         ListView listView = (ListView) findViewById(R.id.list);
-        listView.setEmptyView(findViewById(R.id.empty_view));
+        TextView emptyView = (TextView) findViewById(R.id.empty_view);
+        emptyView.setMovementMethod(LinkMovementMethod.getInstance());
+        listView.setEmptyView(emptyView);
 
         Intent intent = getIntent();
         if (Intent.ACTION_SEARCH.equals(intent.getAction())) {

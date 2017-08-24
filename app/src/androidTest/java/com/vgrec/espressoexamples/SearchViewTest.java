@@ -1,10 +1,12 @@
 package com.vgrec.espressoexamples;
 
 import android.test.ActivityInstrumentationTestCase2;
+import android.view.View;
 import android.widget.EditText;
 
 import com.vgrec.espressoexamples.activities.SearchViewActivity;
 
+import org.hamcrest.Matcher;
 import org.hamcrest.Matchers;
 
 import static android.support.test.espresso.Espresso.onData;
@@ -52,6 +54,9 @@ public class SearchViewTest extends ActivityInstrumentationTestCase2<SearchViewA
 
         // Check the empty view is displayed
         onView(withId(R.id.empty_view)).check(matches(isDisplayed()));
+        Matcher<View> viewMatcher = withId(R.id.empty_view);
+
+
     }
 
     public void testItemFound() {
@@ -105,6 +110,7 @@ public class SearchViewTest extends ActivityInstrumentationTestCase2<SearchViewA
 
         // Check the item appears in search results list.
         onData(allOf(is(instanceOf(String.class)), withItemContent(HELSINKI))).check(matches(isDisplayed()));
+
     }
 
 }

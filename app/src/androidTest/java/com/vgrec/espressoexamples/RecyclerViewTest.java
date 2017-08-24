@@ -30,6 +30,9 @@ public class RecyclerViewTest extends ActivityInstrumentationTestCase2<RecyclerV
         getActivity();
     }
 
+    /**
+     *
+     */
     public void testClickAtPosition() {
         // Perform a click on first element in the RecyclerView
         onView(withId(R.id.recyclerView)).perform(RecyclerViewActions.actionOnItemAtPosition(0, click()));

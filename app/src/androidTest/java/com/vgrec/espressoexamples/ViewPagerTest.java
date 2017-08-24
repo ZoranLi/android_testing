@@ -7,7 +7,7 @@ import com.vgrec.espressoexamples.activities.ViewPagerActivity;
 
 import static android.support.test.espresso.Espresso.onData;
 import static android.support.test.espresso.Espresso.onView;
-import static android.support.test.espresso.action.ViewActions.click;
+import static android.support.test.espresso.action.ViewActions.longClick;
 import static android.support.test.espresso.action.ViewActions.swipeLeft;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.matcher.ViewMatchers.isAssignableFrom;
@@ -52,7 +52,7 @@ public class ViewPagerTest extends ActivityInstrumentationTestCase2<ViewPagerAct
         // We have to refine the query specifying that we are looking for an AdapterView that is currently visible.
         onData(allOf(withBookTitle(BOOK_TITLE), withBookAuthor(BOOK_AUTHOR)))
                 .inAdapterView(allOf(isAssignableFrom(AdapterView.class), isDisplayed()))
-                .perform(click());
+                .perform(longClick());
 
         // Check the correct book title is displayed
         onView(withId(R.id.book_title)).check(matches(withText(BOOK_TITLE)));

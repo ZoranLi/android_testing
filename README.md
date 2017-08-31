@@ -1,20 +1,22 @@
 # EspressoExamples
+
 示例的基本示意图
 ![alt tag](screens/Screenshot_20170824-132446.jpg)
 
-[toc]
+[TOC]
 
 上一篇说道如何在AndroidStudio中配置Espresso，本篇主要介绍使用Espresso时的思考和示例(示例已托管在github)；
 
 ## 关于Espresso的一些杂谈
 
 Espresso被习惯的成为浓缩咖啡，据说原发明国是意大利。不知道为啥Google要将这么有灵魂的测试框架取名叫浓缩咖啡，"浓缩的就是精华"？:)。
-##本文愿景
+
+## 本文愿景
 
   愿你沉醉在单元测试中日渐消瘦，无法自拔~
   愿你写完单元测试归来时，仍是少年。
 
-##对Espresso的基本印象
+## 对Espresso的基本印象
 
 其实在Android 测试支持库中就已经包括如下的一些自动化测试工具：
 
@@ -34,10 +36,11 @@ Espresso被习惯的成为浓缩咖啡，据说原发明国是意大利。不知
 
 #### UI 线程同步
 
----
+------
+
 系好安全带，开车了
 
-####单一特性查找控件
+#### 单一特性查找控件
 
 现在有这么一个情况，代码刚写完，迫不及待的想检查一下里边的控件(视图)表现是否得体。
 
@@ -63,14 +66,15 @@ Espresso被习惯的成为浓缩咖啡，据说原发明国是意大利。不知
 and  so on 可以根据指定的特征来对控件进行筛选查找【如图】
 
 没有什么问题是一张图解决不了的，要是有的话，那就两张:)
+
 - 附图
 
-  
 ![image.png](http://upload-images.jianshu.io/upload_images/840828-6d60f0b5e31cd517.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 
-####多个特性查找控件
+#### 多个特性查找控件
+
 但是，有时候我们会遇到这种情况：
 
 多个页面中控件的id是一样的，这个时候就要需要根据多个特性来筛选了。
@@ -90,7 +94,7 @@ onView(allOf(withId(R.id.jack),withText("Jack")));[注：可变参数可以传�
 
 至此，顺藤摸瓜，根据蛛丝马迹在Espresso中锁定一个控件不在是难事了:)
 
----
+------
 
 东风已借，完事具备，开测了、开测了!
 
@@ -187,11 +191,13 @@ public class RecyclerViewActivity extends AppCompatActivity {
 ```
 
 由一句话引发的思考
+
 ```java
 onView(withId(R.id.recyclerView)).perform(RecyclerViewActions.actionOnItemAtPosition(0,  click()));
 ```
 
-######关于perform()函数的二三事：
+###### 关于perform()函数的二三事：
+
 到底这神乎其技的perform()函数凭借什么超能力来拯救世界的？
 在上文中锁定要测试的控件之后，"该配合演出的控件就要尽情表演了",作为编剧应该给演员一个剧本吧。
 
@@ -211,20 +217,19 @@ ViewAction中都有哪些动作呢？
 
 - ```
   swipe系列 [猛击，这个厉害了]
- | swipeLeft()  | 原版解释: | swipe right-to-left across the vertical center of the view |
+  ```
+
+| swipeLeft()  | 原版解释: | swipe right-to-left across the vertical center of the view |
 | ------------ | ----- | ---------------------------------------- |
 | swipeRight() | 原版解释: | swipe left-to-right across the vertical center of the view |
 | swipeDown()  | 原版解释: | swipe top-to-bottom                      |
 | swipeUp()    | 原版解释: | swipe bottom-to-top                      |
-
-  ```
 
 
 
 - ```
   closeSoftKeyboard() 这个不用多说了吧，关闭软键盘
   ```
-
 
 
 - ```
@@ -249,7 +254,7 @@ ViewAction中都有哪些动作呢？
 
 
 
-######check()函数的二三事
+###### check()函数的二三事
 
 演员演完了，这时候作为Director(导演)就得看一下演员演的是否到位。
 关键是否达到了预期的效果，如果你要加点潜规则啥的都看你自己了:)
@@ -275,7 +280,7 @@ onView(withId(R.id.jack)).check(matches(withText("Jack")));//检查文本
 
 
 
-######【附】
+###### 【附】
 
 - 博客传送门
 

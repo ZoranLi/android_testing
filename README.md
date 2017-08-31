@@ -212,9 +212,9 @@ ViewAction中都有哪些动作呢？
 - ```java
   swipe系列 [猛击，这个厉害了]
   swipeLeft()       原版解释:swipe right-to-left across the vertical center of the view
-  swipeRight()	  原版解释:swipe left-to-right across the vertical center of the view
+  swipeRight()	    原版解释:swipe left-to-right across the vertical center of the view
   swipeDown()       原版解释:       top-to-bottom
-  swipeUp()		  原版解释:       bottom-to-top 
+  swipeUp()		      原版解释:       bottom-to-top 
   ```
 
 - ```

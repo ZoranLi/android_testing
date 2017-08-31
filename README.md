@@ -219,9 +219,13 @@ ViewAction中都有哪些动作呢？
 
   ```
 
+
+
 - ```
   closeSoftKeyboard() 这个不用多说了吧，关闭软键盘
   ```
+
+
 
 - ```
   pressBack() 相当于点击了返回键了

@@ -271,6 +271,6 @@ onView(withId(R.id.jack)).check(matches(withText("Jack")));//检查文本
 
 ######【附】
 
-- 示例传送门
+- 博客传送门
 
-​       https://github.com/ZoranLi/EspressoExample github地址
+​      http://www.jianshu.com/p/0a6b5ac15bc7 博客地址
